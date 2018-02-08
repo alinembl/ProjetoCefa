@@ -1,0 +1,10 @@
+{
+  "name": "ProjetoCefa",
+  "version": "1.0.0",
+  "description": "Projeto Cefa - https://github.com/alinembl/ProjetoCefa",
+  "author": "Aline Bispo <alinebispo@gmail.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}
