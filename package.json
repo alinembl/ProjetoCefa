@@ -1,0 +1,12 @@
+{
+  "name": "ProjetoCefa",
+  "version": "1.0.0",
+  "description": "Projeto Cefa - https://github.com/alinembl/ProjetoCefa",
+  "author": "Aline Bispo <alinembispolima@gmail.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
