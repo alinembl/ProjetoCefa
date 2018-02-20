@@ -1,0 +1,10 @@
+include card.pug
+
+mixin card-list(title, cards)
+  div
+    if title
+      h3 title
+    ul
+      each card in cards
+        li
+          +card(card.title, card.content, card.image)
