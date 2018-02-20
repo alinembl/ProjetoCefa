@@ -1,0 +1,13 @@
+//- card mixin
+//-
+//- Requires `title` and `content` arguments; `image` is optional.
+//- Usage:
+//-   +card('Lorem Ipsum', 'Lorem ipsum dolor sit amet')
+//-   +card('Lorem Ipsum', 'Lorem ipsum dolor sit amet', 'http://foo.com/bar.png')
+mixin card(title, content, image)
+  div
+    if image
+      img(src=image)
+    hr
+    h3 Card title
+    div= content
