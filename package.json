@@ -4,6 +4,8 @@
   "description": "Projeto Cefa - https://github.com/alinembl/ProjetoCefa",
   "author": "Aline Bispo <alinembispolima@gmail.com>",
   "scripts": {
+    "build": "pug -P -O ./data.json ./src/*.pug -o ./build",
+    "watch": "pug -P -O ./data.json ./src/*.pug -o ./build -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
