@@ -1,0 +1,23 @@
+include includes/header
+doctype
+html
+  head
+    meta(charset='utf-8')
+    title CEFA
+  body
+    main
+      form(method='post' action='https://httpbin.org/anything')
+        p
+          label(for='f-name') Nome:
+          input(type='text' id='f-name' name='nome' required)
+        p
+          label(for='f-email') Email:
+          input(type='text' id='f-email' name='email' required)
+        p
+          label(for='f-assunto') Assunto:
+          input(type='text' id='f-assunto' name='assunto')
+        p
+          label(for='f-mensagem') Mensagem:
+          textarea(type='textarea' id='f-mensagem' name='mensagem' required)
+        p
+          button(type='submit') Enviar Mensagem
