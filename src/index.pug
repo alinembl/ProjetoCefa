@@ -1,27 +1,16 @@
 doctype
 html
   head
-    meta(charset="utf-8")
-    title CEFA
+    include includes/head
   body
-    // Header e barra de navegação
-    header
-      h1 CEFA - Centro Espírita Francisco de Assis
-      nav
-        ul
-          li Início
-          li Institucional
-          li Atividades da Casa
-          li Horários
-          li Fale Conosco
-          li Busca
+    include includes/header
     // Conteúdo principal
-    main    
+    main
       section
         header
           h1 Eventos/Palestras
       section
-          header    
+          header
             h1 Notícias
           div
             ul
@@ -29,7 +18,7 @@ html
                 article
                   img(src="")
                   h1 titulo
-                  p descrição 
+                  p descrição
 
     //conteúdo complementar - links úteis e vídeos
     section
