@@ -1,3 +1,22 @@
 {
-  "site_title": "CEFA"
+  "site_title": "CEFA",
+  "highlights": {
+    "news": [
+      {
+        "title": "Lorem Ipsum",
+        "image": "http://lorempixel.com/64/48",
+        "content": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Lorem Ipsum",
+        "image": "http://lorempixel.com/64/48",
+        "content": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "title": "Lorem Ipsum",
+        "image": "http://lorempixel.com/64/48",
+        "content": "Lorem ipsum dolor sit amet"
+      },
+    ]
+  }
 }
