@@ -4,11 +4,17 @@
   "description": "Projeto Cefa - https://github.com/alinembl/ProjetoCefa",
   "author": "Aline Bispo <alinembispolima@gmail.com>",
   "scripts": {
-    "build": "pug -P -O ./data.json ./src/*.pug -o ./build",
-    "watch": "pug -P -O ./data.json ./src/*.pug -o ./build -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build && npm run serve",
+    "serve": "http-server ./build",
+    "build": "for b in html css; do npm run \"build:$b\"; done",
+    "build:html": "pug -P -O ./data.json ./src/*.pug -o ./build",
+    "build:css": "sass --update src/sass:build/assets",
+    "watch:html": "pug -P -O ./data.json ./src/*.pug -o ./build -w",
+    "watch:css": "sass --watch src/sass:build",
+    "test": "npm run build"
   },
   "dependencies": {
+    "http-server": "^0.11.1",
     "pug-cli": "^1.0.0-alpha6"
   }
 }

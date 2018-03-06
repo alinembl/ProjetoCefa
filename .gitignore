@@ -3,3 +3,8 @@ node_modules
 src/*.html
 src/**/*.html
 build
+.sass-cache
+src/*.css
+src/**/*.css
+src/*.map
+src/**/*.map
