@@ -1,34 +1,35 @@
 include mixins/card-list
 include mixins/card
+
 doctype
 html
   head
     include includes/head
-  body.page-home
+  body
     include includes/header
     main
-      .grid-container.clearfix
-        .grid-row.clearfix
-          .grid-col.grid-col-6.bg-orange
+      .grid-container
+        .grid-row
+          .grid-col-6
             section
               header
                 h1 Eventos/Palestras
-          .grid-col.grid-col-3.bg-orange
+          .grid-col-3
             section
               +card-list('Notícias', [highlights.news[0]])
-          .grid-col.grid-col-3.bg-orange
+          .grid-col-3
             section
               +card-list('Notícias', [highlights.news[1]])
     div
-      .grid-container.clearfix
-        .grid-row.clearfix
-          .grid-col.grid-col-6.bg-orange
+      .grid-container
+        .grid-row
+          .grid-col-6
             section
               h1 videos
-          .grid-col.grid-col-3.bg-orange
+          .grid-col-3
             section
               h1 banner
-          .grid-col.grid-col-3.bg-orange
+          .grid-col-3
             section
               h1 banner
 
