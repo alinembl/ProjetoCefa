@@ -1,0 +1,85 @@
+// CEFA Grid System
+// Provides a CSS based grid system.
+// Usage:
+//   <div class="grid-container">
+//     <div class="grid-row">
+//       <div class="grid-col grid-col-4">
+//         <!-- column contents goes here -->
+//       </div>
+//
+//       <div class="grid-col grid-col-4">
+//         <!-- column contents goes here -->
+//       </div>
+//
+//       <div class="grid-col grid-col-4">
+//         <!-- column contents goes here -->
+//       </div>
+//     </div>
+//   </div>
+
+.grid-container
+  @extend ._clearfix
+
+  clear: both
+  margin-left: auto
+  margin-right: auto
+  width: 960px
+
+  > .grid-row
+    @extend ._clearfix
+    padding-bottom: 10px
+    padding-top: 10px
+
+  > .grid-row > .grid-col
+    float: left
+    margin-left: 10px
+    margin-right: 10px
+
+
+  > .grid-row > .grid-col-1
+    @extend .grid-col
+    width: 60px
+
+  > .grid-row > .grid-col-2
+    @extend .grid-col
+    width: 140px
+
+  > .grid-row > .grid-col-3
+    @extend .grid-col
+    width: 220px
+
+  > .grid-row > .grid-col-4
+    @extend .grid-col
+    width: 300px
+
+  > .grid-row > .grid-col-5
+    @extend .grid-col
+    width: 380px
+
+  > .grid-row > .grid-col-6
+    @extend .grid-col
+    width: 460px
+
+  > .grid-row > .grid-col-7
+    @extend .grid-col
+    width: 540px
+
+  > .grid-row > .grid-col-8
+    @extend .grid-col
+    width: 620px
+
+  > .grid-row > .grid-col-9
+    @extend .grid-col
+    width: 700px
+
+  > .grid-row > .grid-col-10
+    @extend .grid-col
+    width: 780px
+
+  > .grid-row > .grid-col-11
+    @extend .grid-col
+    width: 820px
+
+  > .grid-row > .grid-col-12
+    @extend .grid-col
+    width: 940px
